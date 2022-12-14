@@ -6,13 +6,12 @@ public class WordReversal {
         System.out.println("Podaj pierwsze słowo: ");
         Scanner scan = new Scanner(System.in);
 
-        for(int i = 0; i < 6; i++){
+        for(int i = 0; i < sentence1.length; i++){
             String slowo = scan.nextLine();
             sentence1[i] = slowo;
             System.out.println("Podaj kolejne slowo");
         }
-        System.out.println(sentence1[3]);
-        for (int j = 0; j < sentence1.length; j++) {
+        for (int j = sentence1.length-1; j >= 0; j--) {
            System.out.println(sentence1[j]);
         }
     }
